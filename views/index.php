@@ -157,7 +157,7 @@
                         </table>
                     </div>
                 </div>
-                <a href="spisok.php" class="btn btn-primary">Посчитать список</a>
+                <a href="0.php" class="btn btn-primary">Посчитать список</a>
 
             </div>
 

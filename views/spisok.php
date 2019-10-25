@@ -113,17 +113,22 @@
                         <table class="table table-bordered table-hover table-striped">
                             <thead>
                             <tr>
-                                <th>№id</th>
                                 <th>ФИО</th>
+                                <th>Диапазон дат:</th>
                                 <th>Общее время работы в ч:м:с</th>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody><?php foreach ($idd_array as $id_client) {
+                            $rez = get_data1($bigdata, $id_client);?>
                             <tr>
-                                <th><?php  ?></th>
-                                <th><?php  ?></th>
-                                <th><?php  ?></th>
+
+
+
+                                <th><?php  echo $rez["fio"]?></th>
+                                <th><?php  echo $rez["min_date"] . ' - ' . $rez["max_date"] ?></th>
+                                <th><?php  echo $rez["sum"];?></th>
                             </tr>
+                            <?php } ?>
 
                             </tbody>
                         </table>
